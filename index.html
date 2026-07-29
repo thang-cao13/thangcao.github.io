@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- Declares that this document uses HTML5, telling the browser how to interpret this page. This IS NOT an HTML tag; it's a declaration. -->
+<html lang=""en"> <!-- The "html" tag is the root element of the webpage. Everything else is placed inside of it. We set the language to English. -->
+<head> <!-- "head" starts the head section. This contains information about the webpage rather than the content that appears on the page (e.g. page title, stylesheets, metadata, scripts, etc.) -->
+    <meta charset="UTF-8"> <!-- We specify the character encoding as UTF-8, allowing the page to correctly display letters, symbols, and emojis from many languages. Otherwise, some characters may be rendered incorrectly. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 'name="viewport"' controls how the page is displayed on mobile devices. The rest makes the page match the screen's width, then sets the initial zoom level to 100%. -->
+    <title>Thang Le Quoc Cao - Photography Gallery</title> <!-- We're setting the webpage's title, which appears in the browser tab, in bookmarks, and in search engine results. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- We connect an external CSS file to the HTML page; 'rel="stylesheet"' tells the browser that the "style.css" file contains styles, and 'href="style.css"' specifies the location of the file that contains the styles. -->
+</head>
+<body> <!-- Everything in the "body" section is visible on the webpage. -->
+
+    <!-- =========================== NAVIGATION =========================== -->
+    <nav> <!-- Navigation bar w/ links. -->
+        <div class="nav__name">Life Through 35mm</div>
+        <div class="nav__links">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- =========================== HERO =========================== -->
+    <header class="hero">
+        <img class="hero__img" src="https://picsum.photos/seed/faroe-hero/1800/1200" alt="Cliffs and sea under a wide sky">
+        <div class="hero__scrim"></div>
+        <div class="hero__content">
+            <div class="hero__eyebrow">Landscape &amp; Travel Photography</div>
+            <h1 class="hero__title">Thang<br>Cao</h1>
+        <div class="hero__scroll">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- =========================== GALLERY =========================== -->
+    <section id="work">
+        <div class="eyebrow">Selected Work</div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section id="about">
+        <div class="about__grid">
+            <div class="about__portrait">
+                <img src="https://picsum.photos/seed/asher-portrait/900/1125" alt="Portrait of the photographer">
+            </div>
+            <div class="about__body">
+                <div class="eyebrow">About</div>
+                <h2>Behind the Lens</h2>
+                <p>I'm a college student with a camera that's been tagging along on my adventures for the past three years. I love chasing sunsets, mountains, and beautiful landscapes whenever I get the chance. This website is a collection of some of my favorite photos. Thanks for stopping by, and I hope you enjoy them!</p>
+                <p class="about__quote">"The best adventures end with a full memory card."</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- =========================== FOOTER =========================== -->
+    <footer id="contact">
+        <div class="footer__top">
+            <div class="footer__cta">
+                <div class="eyebrow" style="color: var(--brass)">Prints &amp; Collaborations</div>
+                <h2>Get in Touch</h2>
+                <a class="footer__email" href="mailto:kevcaolqt13@gmail.com">kevcaolqt13@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span>© 2026 Thang Le Quoc Cao. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" id="lbClose" aria-label="Close">✕</button>
+        <button class="lightbox__prev" id="lbPrev" aria-label="Previous">‹</button>
+        <button class="lightbox__next" id="lbNext" aria-label="Next">›</button>
+        <figure class="lightbox__figure">
+            <img class="lightbox__img" id="lbImg" src="" alt="">
+            <figcaption class="lightbox__caption" id="lbCaption"></figcaption>
+        </figure>
+    </div>
+
+    <script src="script.js"></script> <!-- Loads an external JavaScript file. This line also specifies where the script is located. JavaScript adds behavior and interactivity (e.g. button clicks, animations, form validation, dynamic page content, etc.). -->
+</body>
+</html>
