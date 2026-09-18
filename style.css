@@ -223,45 +223,6 @@ nav.is-scrolled{
   transform: scale(1.045);
 }
 
-.plate__placard{
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  background: rgba(247,245,241,0.95);
-  padding: 12px 18px;
-  border-left: 2px solid var(--brass);
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 0.35s ease, transform 0.35s ease;
-}
-
-.plate:hover .plate__placard{
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.plate__num{
-  font-family: var(--mono);
-  font-size: 10.5px;
-  letter-spacing: 0.12em;
-  color: var(--brass);
-}
-
-.plate__loc{
-  font-family: var(--display);
-  font-variation-settings: "SOFT" 100, "WONK" 1;
-  font-size: 15px;
-  font-weight: 500;
-  margin-top: 2px;
-}
-
-.plate__meta{
-  font-family: var(--mono);
-  font-size: 10px;
-  color: var(--slate);
-  margin-top: 3px;
-}
-
 .plate{
   opacity: 0;
   transform: translateY(48px) scale(0.98);

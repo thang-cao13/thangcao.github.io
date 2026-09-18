@@ -22,11 +22,6 @@ photos.forEach(photo => {
 
   figure.innerHTML = `
     <img class="plate__img" src="${photo.file}" alt="${photo.alt}">
-    <figcaption class="plate__placard">
-      <div class="plate__num">${photo.num}</div>
-      <div class="plate__loc">${photo.loc}</div>
-      <div class="plate__meta">${photo.meta}</div>
-    </figcaption>
   `;
 
   galleryGrid.appendChild(figure);
