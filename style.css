@@ -22,6 +22,7 @@ body{
   color: var(--ink);
   font-family: var(--body);
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 nav{
@@ -64,7 +65,7 @@ nav.is-scrolled{
 }
 
 .nav__links a{
-  color: var(--ink);
+  color: inherit;
   text-decoration: none;
   position: relative;
   padding-bottom: 3px;
@@ -198,6 +199,7 @@ nav.is-scrolled{
   padding: 120px 40px 100px;
   max-width: 1240px;
   margin: 0 auto;
+  border-top: 1px solid var(--line);
 }
 
 .plate{
@@ -274,8 +276,33 @@ nav.is-scrolled{
 }
 
 #about{
-  background: var(--stone);
-  padding: 100px 40px;
+  position: relative;
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 120px 40px;
+}
+
+#about::before{
+  content: '35MM / FIELD NOTES';
+  position: absolute;
+  top: 42px;
+  right: 40px;
+  color: rgba(247,245,241,0.32);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+}
+
+#about::after{
+  content: '';
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  right: -170px;
+  bottom: -210px;
+  border: 1px solid rgba(150,115,63,0.35);
+  border-radius: 50%;
 }
 
 .about__grid{
@@ -288,14 +315,21 @@ nav.is-scrolled{
 }
 
 .about__portrait{
+  position: relative;
   aspect-ratio: 4/5;
   overflow: hidden;
+  padding: 10px;
+  border: 1px solid rgba(247,245,241,0.25);
+  background: rgba(247,245,241,0.08);
+  box-shadow: 18px 18px 0 rgba(150,115,63,0.22);
 }
 
 .about__portrait img{
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: grayscale(100%) contrast(1.04);
 }
 
 .about__body h2{
@@ -304,11 +338,20 @@ nav.is-scrolled{
   font-weight: 400;
   font-size: clamp(30px, 3.6vw, 42px);
   margin-top: 14px;
+  color: var(--paper);
+  letter-spacing: -0.02em;
 }
 
 .about__body p{
   margin-top: 22px;
   max-width: 56ch;
+  color: rgba(247,245,241,0.72);
+  line-height: 1.8;
+}
+
+#about .eyebrow{
+  color: var(--brass);
+  letter-spacing: 0.04em;
 }
 
 .about__quote{
@@ -319,6 +362,7 @@ nav.is-scrolled{
   font-variation-settings: "SOFT" 100, "WONK" 1;
   font-style: italic;
   font-size: 19px;
+  color: var(--paper) !important;
 }
 
 footer{
