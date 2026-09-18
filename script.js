@@ -2,8 +2,8 @@
 const photos = [
   { file: 'Photos/black_white_coast.jpg', alt: 'Black-and-white coastal photograph', num: 'Plate 01', loc: 'TBD', meta: 'Black & white' },
   { file: 'Photos/drive/M1100618.jpg', alt: 'Landscape photograph M1100618', num: 'Plate 02', loc: 'TBD', meta: 'M1100618' },
-  { file: 'Photos/drive/M1100604.jpg', alt: 'Landscape photograph M1100604', num: 'Plate 03', loc: 'TBD', meta: 'M1100604' },
-  { file: 'Photos/drive/M1100611.jpg', alt: 'Landscape photograph M1100611', num: 'Plate 04', loc: 'TBD', meta: 'M1100611' },
+  { file: 'Photos/web/M1100604.jpg', alt: 'Landscape photograph M1100604', num: 'Plate 03', loc: 'TBD', meta: 'M1100604' },
+  { file: 'Photos/web/M1100611.jpg', alt: 'Landscape photograph M1100611', num: 'Plate 04', loc: 'TBD', meta: 'M1100611' },
   { file: 'Photos/drive/L1000685.jpg', alt: 'Landscape photograph L1000685', num: 'Plate 05', loc: 'TBD', meta: 'L1000685' },
   { file: 'Photos/drive/L1000689.jpg', alt: 'Landscape photograph L1000689', num: 'Plate 06', loc: 'TBD', meta: 'L1000689' },
   { file: 'Photos/drive/L1000677.jpg', alt: 'Landscape photograph L1000677', num: 'Plate 07', loc: 'TBD', meta: 'L1000677' },
@@ -23,7 +23,7 @@ photos.forEach(photo => {
   figure.className = 'plate';
 
   figure.innerHTML = `
-    <img class="plate__img" src="${photo.file}" alt="${photo.alt}">
+    <img class="plate__img" src="${photo.file}" alt="${photo.alt}" loading="lazy" decoding="async">
   `;
 
   galleryGrid.appendChild(figure);
