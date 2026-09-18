@@ -96,20 +96,7 @@ nav.is-scrolled{
   display: flex;
   align-items: flex-end;
   color: var(--paper);
-}
-
-.hero__img{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation: heroZoom 26s ease-out forwards;
-}
-
-@keyframes heroZoom{
-  from{ transform: scale(1); }
-  to{ transform: scale(1.1); }
+  background: url('Photos/coastline.jpg') center / cover no-repeat;
 }
 
 .hero__scrim{

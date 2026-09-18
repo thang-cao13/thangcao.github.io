@@ -1,17 +1,17 @@
 // To add or remove photos, just edit the array.
 const photos = [
-  { file: 'Photos/black_white_coast.jpg', alt: 'TBD', num: 'Plate 01', loc: 'TBD', meta: 'TBD' },
-  { file: 'Photos/coastline_with_flowers.jpg', alt: 'TBD', num: 'Plate 02', loc: 'TBD', meta: 'TBD' },
-  { file: 'Photos/harbor_pier.jpg', alt: 'TBD', num: 'Plate 04', loc: 'TBD', meta: 'TBD' },
-  { file: 'Photos/lighthouse.jpg', alt: 'TBD', num: 'Plate 05', loc: 'TBD', meta: 'TBD' },
-  { file: 'Photos/ocean_pier.jpg', alt: 'TBD', num: 'Plate 06', loc: 'TBD', meta: 'TBD' },
-  { file: 'Photos/palm_tree_house.jpg', alt: 'TBD', num: 'Plate 07', loc: 'TBD', meta: 'TBD' },
-  { file: 'Photos/pier_stores.jpg', alt: 'TBD', num: 'Plate 08', loc: 'TBD', meta: 'TBD' },
-  { file: 'Photos/stuffed_dog_in_lifeboat.jpg', alt: 'TBD', num: 'Plate 09', loc: 'TBD', meta: 'TBD' },
-  { file: 'Photos/drive/M1100618.jpg', alt: 'Landscape photograph M1100618', num: 'Plate 10', loc: 'TBD', meta: 'M1100618' },
-  { file: 'Photos/drive/L1000685.jpg', alt: 'Landscape photograph L1000685', num: 'Plate 11', loc: 'TBD', meta: 'L1000685' },
-  { file: 'Photos/drive/L1000689.jpg', alt: 'Landscape photograph L1000689', num: 'Plate 12', loc: 'TBD', meta: 'L1000689' },
-  { file: 'Photos/drive/L1000677.jpg', alt: 'Landscape photograph L1000677', num: 'Plate 13', loc: 'TBD', meta: 'L1000677' },
+  { file: 'Photos/drive/M1100618.jpg', alt: 'Landscape photograph M1100618', num: 'Plate 01', loc: 'TBD', meta: 'M1100618' },
+  { file: 'Photos/drive/L1000685.jpg', alt: 'Landscape photograph L1000685', num: 'Plate 02', loc: 'TBD', meta: 'L1000685' },
+  { file: 'Photos/drive/L1000689.jpg', alt: 'Landscape photograph L1000689', num: 'Plate 03', loc: 'TBD', meta: 'L1000689' },
+  { file: 'Photos/drive/L1000677.jpg', alt: 'Landscape photograph L1000677', num: 'Plate 04', loc: 'TBD', meta: 'L1000677' },
+  { file: 'Photos/black_white_coast.jpg', alt: 'TBD', num: 'Plate 05', loc: 'TBD', meta: 'TBD' },
+  { file: 'Photos/coastline_with_flowers.jpg', alt: 'TBD', num: 'Plate 06', loc: 'TBD', meta: 'TBD' },
+  { file: 'Photos/harbor_pier.jpg', alt: 'TBD', num: 'Plate 07', loc: 'TBD', meta: 'TBD' },
+  { file: 'Photos/lighthouse.jpg', alt: 'TBD', num: 'Plate 08', loc: 'TBD', meta: 'TBD' },
+  { file: 'Photos/ocean_pier.jpg', alt: 'TBD', num: 'Plate 09', loc: 'TBD', meta: 'TBD' },
+  { file: 'Photos/palm_tree_house.jpg', alt: 'TBD', num: 'Plate 10', loc: 'TBD', meta: 'TBD' },
+  { file: 'Photos/pier_stores.jpg', alt: 'TBD', num: 'Plate 11', loc: 'TBD', meta: 'TBD' },
+  { file: 'Photos/stuffed_dog_in_lifeboat.jpg', alt: 'TBD', num: 'Plate 12', loc: 'TBD', meta: 'TBD' },
 ];
 
 const galleryGrid = document.getElementById('galleryGrid');
