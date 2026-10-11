@@ -241,8 +241,10 @@ nav.is-scrolled{
 
   .plate:nth-child(2) .plate__img,
   .plate:nth-child(13) .plate__img{
-    /* Keep both widths matched at the full 3:4 height. */
+    /* Keep both widths matched, but leave room for the header and small margins. */
     height: calc(400cqw / 3);
+    max-height: calc(100vh - 112px);
+    max-height: calc(100dvh - 112px);
   }
 }
 
