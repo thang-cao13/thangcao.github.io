@@ -228,6 +228,19 @@ nav.is-scrolled{
   object-fit: cover;
 }
 
+@media (min-width: 561px){
+  .plate:nth-child(2),
+  .plate:nth-child(13){
+    container-type: inline-size;
+  }
+
+  .plate:nth-child(2) .plate__img,
+  .plate:nth-child(13) .plate__img{
+    /* Keep the current width and subtract one CSS inch from the height. */
+    height: calc(400cqw / 3 - 1in);
+  }
+}
+
 .plate__img{
   display: block;
   width: 100%;
