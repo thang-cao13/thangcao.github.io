@@ -238,6 +238,13 @@ nav.is-scrolled{
   transition: transform 0.7s ease;
 }
 
+.plate:not(:nth-child(2)):not(:nth-child(13)) .plate__img{
+  width: auto;
+  max-width: 100%;
+  max-height: min(72vh, calc(100vh - 180px));
+  margin: 0 auto;
+}
+
 .plate:hover .plate__img{
   transform: scale(1.045);
 }
