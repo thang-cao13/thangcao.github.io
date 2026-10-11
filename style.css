@@ -241,7 +241,7 @@ nav.is-scrolled{
 .plate:not(:nth-child(2)):not(:nth-child(13)) .plate__img{
   width: auto;
   max-width: 100%;
-  max-height: calc(100vh - 24px);
+  max-height: calc(100vh - 112px);
   margin: 0 auto;
 }
 
