@@ -236,8 +236,8 @@ nav.is-scrolled{
 
   .plate:nth-child(2) .plate__img,
   .plate:nth-child(13) .plate__img{
-    /* Keep both widths matched with a half-inch reduction from the 3:4 height. */
-    height: calc(400cqw / 3 - 0.5in);
+    /* Keep both widths matched at the full 3:4 height. */
+    height: calc(400cqw / 3);
   }
 }
 
