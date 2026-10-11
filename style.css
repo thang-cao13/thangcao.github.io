@@ -228,6 +228,11 @@ nav.is-scrolled{
   object-fit: cover;
 }
 
+.plate:nth-child(13) .plate__img{
+  /* Preserve the top of the photo and crop the bottom within the same frame. */
+  object-position: center top;
+}
+
 @media (min-width: 561px){
   .plate:nth-child(2),
   .plate:nth-child(13){
