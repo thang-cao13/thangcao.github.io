@@ -224,7 +224,7 @@ nav.is-scrolled{
 
 .plate:nth-child(2) .plate__img,
 .plate:nth-child(13) .plate__img{
-  aspect-ratio: 7 / 10;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
 }
 
