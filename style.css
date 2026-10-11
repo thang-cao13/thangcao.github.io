@@ -241,12 +241,12 @@ nav.is-scrolled{
 .plate:not(:nth-child(2)):not(:nth-child(13)) .plate__img{
   width: auto;
   max-width: 100%;
-  max-height: calc(100vh - 48px);
+  max-height: calc(100vh - 24px);
   margin: 0 auto;
 }
 
 .plate:hover .plate__img{
-  transform: scale(1.045);
+  transform: none;
 }
 
 .plate{
