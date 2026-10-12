@@ -248,6 +248,17 @@ nav.is-scrolled{
   }
 }
 
+@media (min-width: 561px) and (hover: hover) and (pointer: fine){
+  .plate:nth-child(13) .plate__img{
+    /* Keep the matched height, but use the photo's full ratio without cropping. */
+    width: auto;
+    max-width: 100%;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
 .plate__img{
   display: block;
   width: 100%;
