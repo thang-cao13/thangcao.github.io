@@ -580,6 +580,24 @@ footer{
   }
 }
 
+@media (max-width: 560px) and (orientation: portrait){
+  .gallery-grid{
+    row-gap: 16px;
+  }
+
+  /* Short photos should not reserve a full screen of blank space on phones. */
+  .plate:not(:nth-child(2)):not(:nth-child(13)){
+    height: auto;
+    display: block;
+  }
+
+  .plate:not(:nth-child(2)):not(:nth-child(13)) .plate__img{
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce){
   *{
     animation: none !important;
