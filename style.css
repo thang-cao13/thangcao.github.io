@@ -598,6 +598,31 @@ footer{
   }
 }
 
+@media (max-width: 1024px) and (max-height: 560px) and (orientation: landscape) and (hover: none) and (pointer: coarse){
+  .plate:nth-child(2),
+  .plate:nth-child(13){
+    height: calc(100vh - 112px);
+    height: calc(100dvh - 112px);
+    display: flex;
+    align-items: center;
+  }
+
+  .plate:nth-child(2){ justify-content: flex-end; }
+  .plate:nth-child(13){ justify-content: flex-start; }
+
+  .plate:nth-child(2) .plate__img,
+  .plate:nth-child(13) .plate__img{
+    /* Fit each complete vertical photo instead of cropping it to a wide box. */
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
 @media (prefers-reduced-motion: reduce){
   *{
     animation: none !important;
